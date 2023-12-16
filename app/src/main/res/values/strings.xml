@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Capstone Waste Classification</string>
+    <string name="app_name">WasteLife</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Scan</string>
     <string name="title_notifications">Profile</string>
