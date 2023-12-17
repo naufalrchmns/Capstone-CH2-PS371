@@ -19,9 +19,9 @@
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.naufal.capstonewasteclassification.ui.profile.ProfileFragment"
+        android:name="com.naufal.capstonewasteclassification.ui.chart.ChartFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_chart" />
 
     <fragment
         android:id="@+id/navigation_menu"

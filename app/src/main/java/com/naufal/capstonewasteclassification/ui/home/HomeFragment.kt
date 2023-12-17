@@ -30,10 +30,6 @@ class HomeFragment : Fragment() {
         val root: View = binding.root
 
         // Set up click listener for the menu button
-        binding.menu.setOnClickListener {
-            // Navigate to the MenuFragment
-            findNavController().navigate(R.id.navigation_menu)
-        }
 
         return root
     }

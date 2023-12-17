@@ -1,8 +1,11 @@
 package com.naufal.capstonewasteclassification.ui.scan
 
+import android.Manifest
 import android.app.Activity
 import android.app.SearchManager
+import android.content.ComponentName
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.os.Bundle
 import android.provider.MediaStore
@@ -13,6 +16,8 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.naufal.capstonewasteclassification.R
 import com.naufal.capstonewasteclassification.databinding.FragmentScanBinding
@@ -55,8 +60,7 @@ class ScanFragment : Fragment() {
         val predictButton: Button = root.findViewById(R.id.button)
 
         takePhotoButton.setOnClickListener {
-            val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-            startActivityForResult(intent, CAMERA_REQUEST_CODE)
+            checkCameraPermission()
         }
 
         choosePhotoButton.setOnClickListener {
@@ -167,5 +171,51 @@ class ScanFragment : Fragment() {
 
         // Set the converted Bitmap to the ImageView
         imageView.setImageBitmap(bitmap)
+    }
+
+    private fun checkCameraPermission() {
+        if (ContextCompat.checkSelfPermission(
+                requireContext(),
+                Manifest.permission.CAMERA
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+            // Request the permission
+            ActivityCompat.requestPermissions(
+                requireActivity(),
+                arrayOf(Manifest.permission.CAMERA),
+                CAMERA_REQUEST_CODE
+            )
+        } else {
+            // Permission is already granted, launch the camera
+            startCamera()
+        }
+    }
+
+    private fun startCamera() {
+        val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+        startActivityForResult(intent, CAMERA_REQUEST_CODE)
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        when (requestCode) {
+            CAMERA_REQUEST_CODE -> {
+                if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    // Camera permission granted, launch the camera
+                    startCamera()
+                } else {
+                    // Camera permission denied, show a message or handle accordingly
+                    Toast.makeText(
+                        requireContext(),
+                        "Camera permission denied",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
+            else -> super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        }
     }
 }

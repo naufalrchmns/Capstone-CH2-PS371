@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">WasteLife</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Scan</string>
-    <string name="title_notifications">Profile</string>
+    <string name="title_home">Beranda</string>
+    <string name="title_dashboard">Pindai</string>
+    <string name="title_notifications">Tukar</string>
     <string name="title_menu">menu</string>
 </resources>
