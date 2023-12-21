@@ -4,4 +4,14 @@
     <string name="title_dashboard">Pindai</string>
     <string name="title_notifications">Tukar</string>
     <string name="title_menu">menu</string>
+    <string name="title_signup_page">Register</string>
+    <string name="name">Nama</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signup">Register</string>
+    <string name="title_login_page">Login</string>
+    <string name="message_login_page">Masukkan kredensial login</string>
+    <string name="login">Login</string>
+    <string name="loginInfo">Sudah punya akun?</string>
+    <string name="Logout">Logout</string>
 </resources>

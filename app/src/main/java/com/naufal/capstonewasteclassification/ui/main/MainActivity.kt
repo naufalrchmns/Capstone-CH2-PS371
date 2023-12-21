@@ -1,6 +1,9 @@
-package com.naufal.capstonewasteclassification
+package com.naufal.capstonewasteclassification.ui.main
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import androidx.activity.viewModels
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
@@ -8,22 +11,43 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.naufal.capstonewasteclassification.R
+import com.naufal.capstonewasteclassification.auth.register.RegisterActivity
 import com.naufal.capstonewasteclassification.databinding.ActivityMainBinding
+import com.naufal.capstonewasteclassification.pref.UserPreference
+import com.naufal.capstonewasteclassification.pref.dataStore
 
 class MainActivity : AppCompatActivity() {
 
+    private val viewModel by viewModels<MainViewModel> {
+        MainViewModelFactory.getInstance(this, UserPreference.getInstance(dataStore))
+    }
+
     private lateinit var binding: ActivityMainBinding
+    private lateinit var btn: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+
+        btn = findViewById(R.id.button2)
+
+        btn.setOnClickListener {
+            viewModel.logout()
+            val intent = Intent(this, RegisterActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+            finish()
+        }
 
         WindowCompat.setDecorFitsSystemWindows(
             window,
             false
         )
-
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
         // Hide the ActionBar
         supportActionBar?.hide()
