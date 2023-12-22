@@ -34,3 +34,5 @@ https://youtu.be/i3uN6lqH9RE
 https://www.canva.com/design/DAF3TZ5YwMQ/Z0vIDQpWvFWBQPB4Bd6fug/view 
 
 To Run our application, simply make a new project to the android studio, new from version control and insert this Github repository link.
+Or download the APK from Google Drive link below 
+https://drive.google.com/file/d/1ph-jLINVLD932ftUJcTdoudGeBhU2nqv/view?usp=sharing
