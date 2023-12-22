@@ -70,7 +70,7 @@
                 android:id="@+id/PilahSampah"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pilah Smpahmu!"
+                android:text="Sort your trash!"
                 app:layout_constraintBottom_toBottomOf="@+id/dashboard"
                 app:layout_constraintEnd_toEndOf="@+id/dashboard"
                 app:layout_constraintHorizontal_bias="0.04"

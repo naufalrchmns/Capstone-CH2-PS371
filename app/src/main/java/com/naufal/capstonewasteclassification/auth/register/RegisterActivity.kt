@@ -1,6 +1,7 @@
 package com.naufal.capstonewasteclassification.auth.register
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -20,6 +21,7 @@ class RegisterActivity : AppCompatActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setupView()

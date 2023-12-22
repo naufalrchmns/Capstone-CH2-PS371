@@ -44,6 +44,7 @@ class PwEditText : AppCompatEditText {
         editBg = ContextCompat.getDrawable(context, R.drawable.edit_text) as Drawable
         editErrorBg =
             ContextCompat.getDrawable(context, R.drawable.edit_text_error) as Drawable
+        setHintTextColor(ContextCompat.getColor(context, android.R.color.white))
     }
 
 }

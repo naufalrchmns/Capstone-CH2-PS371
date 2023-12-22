@@ -60,16 +60,10 @@ class ScanFragment : Fragment() {
 
         sharedViewModel = ViewModelProvider(requireActivity()).get(SharedViewModel::class.java)
 
-
-//        val imageProcessor = ImageProcessor.Builder()
-//            .add(ResizeOp(224, 224, ResizeOp.ResizeMethod.BILINEAR))
-//            .build()
-
         val takePhotoButton: Button = root.findViewById(R.id.button4)
         val choosePhotoButton: Button = root.findViewById(R.id.button5)
         val resultTextView: TextView = root.findViewById(R.id.textView2)
         val predictButton: Button = root.findViewById(R.id.button)
-        val next: Button = root.findViewById(R.id.btn_next)
 
         takePhotoButton.setOnClickListener {
             checkCameraPermission()
@@ -138,11 +132,18 @@ class ScanFragment : Fragment() {
                 // Set the result to the TextView
                 resultTextView.text = result
 
+                if(result == "Recycle"){
+                    sharedViewModel.tambahSampah()
+                    Toast.makeText(requireContext(), "Successfully added Recycle", Toast.LENGTH_SHORT).show()
+                }
+                else{
+                    Toast.makeText(requireContext(), "Successfully scanned Organic", Toast.LENGTH_SHORT).show()
+
+                }
                 model.close()
             } catch (e: IOException) {
                 e.printStackTrace()
             }
-
         }
         return root
     }

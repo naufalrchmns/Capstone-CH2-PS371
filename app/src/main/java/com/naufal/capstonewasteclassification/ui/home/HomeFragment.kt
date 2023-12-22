@@ -36,13 +36,11 @@ class HomeFragment : Fragment() {
         val root: View = binding.root
 
         sharedViewModel = ViewModelProvider(requireActivity()).get(SharedViewModel::class.java)
-        sharedViewModel.count.observe(viewLifecycleOwner, Observer { count ->
-           binding.jumlahsampah.text = count.toString() // Update TextView with count value
+        clickCountTextView = root.findViewById(R.id.jumlahsampah)
+
+        sharedViewModel.jumlahSampah.observe(viewLifecycleOwner, Observer { jumlahSampah ->
+            clickCountTextView.text = jumlahSampah.toString()
         })
-
-
-
-        // Set up click listener for the menu button
 
         return root
     }
@@ -52,8 +50,5 @@ class HomeFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
-    }
-    fun updateClickCount(clickCount: Int) {
-        clickCountTextView.text = clickCount.toString()
     }
 }

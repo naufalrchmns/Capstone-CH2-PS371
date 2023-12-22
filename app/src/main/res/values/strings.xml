@@ -1,17 +1,18 @@
 <resources>
     <string name="app_name">WasteLife</string>
-    <string name="title_home">Beranda</string>
-    <string name="title_dashboard">Pindai</string>
-    <string name="title_notifications">Tukar</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Scan</string>
+    <string name="title_notifications">Exchange</string>
     <string name="title_menu">menu</string>
     <string name="title_signup_page">Register</string>
-    <string name="name">Nama</string>
+    <string name="name">Name</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="signup">Register</string>
     <string name="title_login_page">Login</string>
-    <string name="message_login_page">Masukkan kredensial login</string>
+    <string name="message_login_page">Enter login credential</string>
     <string name="login">Login</string>
-    <string name="loginInfo">Sudah punya akun?</string>
+    <string name="loginInfo">Already have an account?</string>
     <string name="Logout">Logout</string>
+    <string name="logininfo">Have an account?</string>
 </resources>

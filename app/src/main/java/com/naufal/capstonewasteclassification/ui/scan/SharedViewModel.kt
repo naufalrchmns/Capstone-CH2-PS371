@@ -5,10 +5,14 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class SharedViewModel : ViewModel() {
-    private val _count = MutableLiveData(0)
-    val count: LiveData<Int> = _count
+    private val _jumlahSampah = MutableLiveData<Int>()
+    val jumlahSampah: LiveData<Int> get() = _jumlahSampah
 
-    fun incrementCount() {
-        _count.value = _count.value?.plus(1)
+    init {
+        _jumlahSampah.value = 0
+    }
+
+    fun tambahSampah() {
+        _jumlahSampah.value = (_jumlahSampah.value ?: 0) + 1
     }
 }
