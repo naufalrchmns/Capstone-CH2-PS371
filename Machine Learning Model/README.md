@@ -1,3 +1,40 @@
+## Our Work Steps
+
+1. **Understanding the Problem**
+   - Clearly define the problem to be solved with Machine Learning.
+   - Identify the business objectives of the project.
+
+2. **Data Collection**
+   - Identify relevant data sources for the problem.
+   - Collect, clean, and prepare data. Ensure data is clean, complete, and representative.
+
+3. **Data Exploration (Exploratory Data Analysis - EDA)**
+   - Visualize data to discover patterns, anomalies, and insights.
+
+4. **Feature Selection (Feature Engineering)**
+   - Identify and select the most relevant features to build the model.
+   - Perform transformations or create new features if necessary.
+
+5. **Model Selection**
+   - Choose a Machine Learning model that suits the type of problem (classification, regression, etc.).
+   - Evaluate several models and choose the most suitable one.
+
+6. **Model Training**
+   - Train the model using the training set.
+   - Tune model parameters to improve performance.
+
+7. **Model Evaluation**
+   - Evaluate model performance using the test set.
+   - Use evaluation metrics appropriate to the problem type.
+
+8. **Model Optimization**
+   - Modify models or parameters to improve performance.
+   - Consider techniques such as regularization or parameter tuning.
+
+9. **Model Implementation**
+   - Deploy the model in an Android application using TfLite.
+
+
 ## 📝 About Dataset
 ### Waste Classification Dataset Overview
 
