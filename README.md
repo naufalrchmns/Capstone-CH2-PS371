@@ -1,5 +1,8 @@
 # Capstone-CH2-PS371
 
+![WasteLife](https://github.com/naufalrchmns/Capstone-CH2-PS371/assets/102205105/3663aecb-1629-47d1-ab35-20f703f0fbe6)
+
+
 ## Our Teams Member
 1. M296BSY1108 - Muhammad Nur Rachman Nidhi Suryono - Universitas Pembangunan Nasional Veteran Jawa Timur- Machine Learning
 2. M310BSX0396 - Nida Nafila - Universitas Samudra- Machine Learning
