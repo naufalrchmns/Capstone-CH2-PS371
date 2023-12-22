@@ -1,3 +1,5 @@
+# Machine Learning Notes
+
 ## Our Work Steps
 
 1. **Understanding the Problem**
