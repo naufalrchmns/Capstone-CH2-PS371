@@ -1,9 +1,9 @@
 # Capstone-CH2-PS371
 
 ## Our Teams Member
-1. M296BSY1108 - Muhammad Nur Rachman Nidhi Suryono - Universitas Pembangunan Nasional Veteran Jawa Timur- Learning path
-2. M310BSX0396 - Nida Nafila - Universitas Samudra- Learning path
-3. M310BSX1917 - Syakirah Dwi Azura - Universitas Samudra- Learning path
+1. M296BSY1108 - Muhammad Nur Rachman Nidhi Suryono - Universitas Pembangunan Nasional Veteran Jawa Timur- Machine Learning
+2. M310BSX0396 - Nida Nafila - Universitas Samudra- Machine Learning
+3. M310BSX1917 - Syakirah Dwi Azura - Universitas Samudra- Machine Learning
 4. C180BSY4347 - Rizky Respati Aprilian Marpitomo - Universitas Airlangga - Cloud Computing
 5. C296BSY3989 - Rommy Esvaldo Bhagaskara - Universitas Pembangunan Nasional Veteran Jawa Timur- Cloud Computing
 6. A291BSY2789 - Naufal Rachman Syarif - Universitas Pasundan - Android Learning
