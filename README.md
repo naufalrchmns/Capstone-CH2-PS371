@@ -29,3 +29,5 @@ https://youtu.be/i3uN6lqH9RE
 
 ## SLIDE PRESENTATION LINK:
 https://www.canva.com/design/DAF3TZ5YwMQ/Z0vIDQpWvFWBQPB4Bd6fug/view 
+
+To Run our application, simply make a new project to the android studio, new from version control and insert this Github repository link.
