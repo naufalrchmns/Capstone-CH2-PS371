@@ -1,6 +1,6 @@
-:page_facing_up: # Machine Learning Notes
+# :page_facing_up: Machine Learning Notes
 
-:gear: ## Our Work Steps
+## :gear: Our Work Steps
 
 1. **Understanding the Problem**
    - Clearly define the problem to be solved with Machine Learning.
