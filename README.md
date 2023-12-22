@@ -6,8 +6,8 @@
 3. M310BSX1917 - Syakirah Dwi Azura - Universitas Samudra- Machine Learning
 4. C180BSY4347 - Rizky Respati Aprilian Marpitomo - Universitas Airlangga - Cloud Computing
 5. C296BSY3989 - Rommy Esvaldo Bhagaskara - Universitas Pembangunan Nasional Veteran Jawa Timur- Cloud Computing
-6. A291BSY2789 - Naufal Rachman Syarif - Universitas Pasundan - Android Learning
-7. A296BSX2683 - Diajeng Putri Widiastuti - Universitas Pembangunan Nasional Veteran Jawa Timur- Android Learning
+6. A291BSY2789 - Naufal Rachman Syarif - Universitas Pasundan - Mobile Development
+7. A296BSX2683 - Diajeng Putri Widiastuti - Universitas Pembangunan Nasional Veteran Jawa Timur- Mobile Development
 
 ## Project Backgroud
 Addressing the global challenge of improper waste disposal, our team has developed an Android application that leverages Machine Learning to accurately classify trash images and guide users towards responsible disposal practices. Motivated by the environmental and health implications of mismanaged waste, we aim to bridge the knowledge gap through this user-friendly app.
